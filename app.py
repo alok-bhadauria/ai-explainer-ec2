@@ -1,16 +1,14 @@
 #app.py
 from flask import Flask, render_template, request
 import os
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
 
 from langchain.chat_models import init_chat_model
 from langchain_core.prompts import ChatPromptTemplate
 
 app = Flask(__name__)
 
+# Set your API key
+os.environ["GROQ_API_KEY"] = "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"
 
 # Initialize model
 model = init_chat_model(
