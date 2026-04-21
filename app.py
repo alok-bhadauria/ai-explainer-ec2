@@ -8,7 +8,7 @@ from langchain_core.prompts import ChatPromptTemplate
 app = Flask(__name__)
 
 # Set your API key
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = ""
 
 # Initialize model
 model = init_chat_model(
